@@ -1,15 +1,15 @@
 {
   "name": "telmie",
   "version": "0.0.1",
-  "description": "oclif example Hello World CLI",
+  "description": "TODO",
   "author": "Atsushi Ishida @gipcompany",
   "bin": {
     "telmie": "./bin/run"
   },
-  "homepage": "https://github.com/gipcompany/hello-world",
+  "homepage": "https://github.com/diveintohacking/telmie",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "gipcompany/hello-world",
+  "repository": "https://github.com/diveintohacking/telmie",
   "files": [
     "/bin",
     "/dist",
@@ -48,7 +48,7 @@
     "topicSeparator": " ",
     "topics": {
       "hello": {
-        "description": "Say hello to the world and others"
+        "description": "TODO"
       }
     }
   },
@@ -66,7 +66,8 @@
   },
   "bugs": "https://github.com/gipcompany/hello-world/issues",
   "keywords": [
-    "oclif"
+    "openai",
+    "chatgpt"
   ],
   "types": "dist/index.d.ts"
 }

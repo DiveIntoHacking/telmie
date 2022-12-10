@@ -1,17 +1,19 @@
-oclif-hello-world
+telmie
 =================
 
-oclif example Hello World CLI
+You can ask OpenAI about anything...
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
+[![Version](https://img.shields.io/npm/v/telmie.svg)](https://npmjs.org/package/telmie)
 [![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
-[![Downloads/week](https://img.shields.io/npm/dw/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/oclif/hello-world/blob/main/package.json)
+[![Downloads/week](https://img.shields.io/npm/dw/telmie.svg)](https://npmjs.org/package/telmie)
+[![License](https://img.shields.io/npm/l/telmie.svg)](https://github.com/DiveIntoHacking/telmie/blob/main/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+    
+
+
 <!-- tocstop -->
 # Usage
 <!-- usage -->

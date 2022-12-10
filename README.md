@@ -11,9 +11,6 @@ You can ask OpenAI about anything...
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
-    
-
-
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -31,6 +28,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`telmie chat MESSAGE`](#telmie-chat-message)
+* [`telmie hello PERSON`](#telmie-hello-person)
+* [`telmie hello world`](#telmie-hello-world)
 * [`telmie help [COMMAND]`](#telmie-help-command)
 * [`telmie plugins`](#telmie-plugins)
 * [`telmie plugins:install PLUGIN...`](#telmie-pluginsinstall-plugin)
@@ -41,6 +41,66 @@ USAGE
 * [`telmie plugins:uninstall PLUGIN...`](#telmie-pluginsuninstall-plugin-1)
 * [`telmie plugins:uninstall PLUGIN...`](#telmie-pluginsuninstall-plugin-2)
 * [`telmie plugins update`](#telmie-plugins-update)
+
+## `telmie chat MESSAGE`
+
+You can ask ChatGPT about anything with this cli command.
+
+```
+USAGE
+  $ telmie chat [MESSAGE]
+
+ARGUMENTS
+  MESSAGE  description that you want to ask ChatGPT
+
+DESCRIPTION
+  You can ask ChatGPT about anything with this cli command.
+
+EXAMPLES
+  $ telmie chat "something to ask"
+```
+
+_See code: [dist/commands/chat.ts](https://github.com/diveintohacking/telmie/blob/v0.0.1/dist/commands/chat.ts)_
+
+## `telmie hello PERSON`
+
+Say hello
+
+```
+USAGE
+  $ telmie hello [PERSON] -f <value>
+
+ARGUMENTS
+  PERSON  Person to say hello to
+
+FLAGS
+  -f, --from=<value>  (required) Who is saying hello
+
+DESCRIPTION
+  Say hello
+
+EXAMPLES
+  $ telmie hello friend --from oclif
+  hello friend from oclif! (./src/commands/hello/index.ts)
+```
+
+_See code: [dist/commands/hello/index.ts](https://github.com/diveintohacking/telmie/blob/v0.0.1/dist/commands/hello/index.ts)_
+
+## `telmie hello world`
+
+Say hello world
+
+```
+USAGE
+  $ telmie hello world
+
+DESCRIPTION
+  Say hello world
+
+EXAMPLES
+  $ telmie hello world
+  hello world! (./src/commands/hello/world.ts)
+```
 
 ## `telmie help [COMMAND]`
 
@@ -104,9 +164,7 @@ DESCRIPTION
 
   Installation of a user-installed plugin will override a core plugin.
 
-  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command
-  will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in
-  the CLI without the need to patch and update the whole CLI.
+  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in the CLI without the need to patch and update the whole CLI.
 
 
 ALIASES
@@ -164,9 +222,7 @@ DESCRIPTION
 
   Installation of a user-installed plugin will override a core plugin.
 
-  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command
-  will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in
-  the CLI without the need to patch and update the whole CLI.
+  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in the CLI without the need to patch and update the whole CLI.
 
 
 ALIASES
@@ -199,8 +255,7 @@ DESCRIPTION
   Links a plugin into the CLI for development.
   Installation of a linked plugin will override a user-installed or core plugin.
 
-  e.g. If you have a user-installed or core plugin that has a 'hello' command, installing a linked plugin with a 'hello'
-  command will override the user-installed or core plugin implementation. This is useful for development work.
+  e.g. If you have a user-installed or core plugin that has a 'hello' command, installing a linked plugin with a 'hello' command will override the user-installed or core plugin implementation. This is useful for development work.
 
 
 EXAMPLES
